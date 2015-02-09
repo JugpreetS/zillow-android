@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.-->
+
+<resources>
+
+    <!-- Label for the "Done" button on the far left of action mode toolbars. -->
+    <string name="abc_action_mode_done">Done</string>
+    <!-- Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] -->
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <!-- Content description for the action bar "up" affordance. [CHAR LIMIT=NONE] -->
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <!-- Content description for the action menu overflow button. [CHAR LIMIT=NONE] -->
+    <string name="abc_action_menu_overflow_description">More options</string>
+
+    <!-- SearchView accessibility description for search button [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_search">Search</string>
+    <!-- SearchView accessibility description for search text field [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_query">Search query</string>
+    <!-- SearchView accessibility description for clear button [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <!-- SearchView accessibility description for submit button [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <!-- SearchView accessibility description for voice button [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_voice">Voice search</string>
+
+    <!-- ActivityChooserView - accessibility support -->
+    <!-- Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] -->
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <!-- Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] -->
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <!-- Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] -->
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <!-- Description of the choose target button in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] -->
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="app_name">CSCI571 Homework 9</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="header">Search Your Property Here</string>
+    <string name="address_label">Address*:</string>
+    <string name="city_label">City*:</string>
+    <string name="state_label">State*:</string>
+    <string name="city_hint">City</string>
+    <string name="address_hint">Street Address</string>
+    <string name="state_hint">Choose State</string>
+    <string name="search_btn_text">Search</string>
+    <string name="zillow_logo_desc">zillow logo</string>
+    <string name="empty_field_error">This field is required</string>
+    <string name="no_result_error">No exact match found &#8212;&#8212; Verify that the given address is correct.</string>
+
+    <string-array name="state_values">
+        <item>Choose State</item>
+        <item>AK</item>
+        <item>AL</item>
+        <item>AR</item>
+        <item>AZ</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DC</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>IA</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>MA</item>
+        <item>MD</item>
+        <item>ME</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MO</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>NE</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NV</item>
+        <item>NY</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VA</item>
+        <item>VT</item>
+        <item>WA</item>
+        <item>WI</item>
+        <item>WV</item>
+        <item>WY</item>
+    </string-array>
+
+    <string name="title_activity_search">Results From Zillow</string>
+	<string name="zestimate_message_1">&#0169; Zillow.Inc., 2006&#8211;2014</string>
+	<string name="zestimate_message_2">Use is subject to <a href="http://www.zillow.com/corp/Terms.htm">Terms Of Use</a></string>
+	<string name="zestimate_message_3"><a href="http://www.zillow.com/zestimate/">What\'s a Zestimate?</a></string>
+	<string name="propertyType">Property Type</string>
+	<string name="lastSoldPrice">Last Sold Price</string>
+	<string name="yearBuilt">Year Built</string>
+	<string name="lastSoldDate">Last Sold Date</string>
+	<string name="lotSizeSqFt">Lot Size</string>
+	<string name="estimateAmount">Zestimate &#174; Property Estimate as of </string>
+	<string name="finishedSqFt">Finished Area</string>
+	<string name="estimateValueChange">30 Days Overall Change</string>
+	<string name="bathrooms">Bathrooms</string>
+	<string name="allTimePropertyRange">All Time Property Range</string>
+	<string name="bedrooms">Bedrooms</string>
+	<string name="restimateAmount">Rent Zestimate &#174; Rent Valuation as of </string>
+	<string name="taxAssessmentYear">Tax Assesment Year</string>
+	<string name="restimateValueChange">30 Days Rent Change</string>
+	<string name="taxAssessment">Tax Assessment</string>
+	<string name="allTimeRentChange">All Time Rent Range</string>
+	<string name="seeMore">See more details on Zillow:</string>
+	<string name="temp">temp</string>
+	<string name="changeArrow">Change Arrow</string>
+	<string name="fb_share_desc">Facebook share button</string>
+	<string name="zestimateYearOneInfoVal">Historical Zestimate for the past 1 year</string>
+	<string name="zestimateYearFiveInfoVal">Historical Zestimate for the past 5 years</string>
+	<string name="zestimateYearTenInfoVal">Historical Zestimate for the past 10 years</string>
+	<string name="addressSampleVal">Temporary address sample value, CA-90007</string>
+	<string name="btnPrev">Previous</string>
+	<string name="btnNext">Next</string>
+	<string name="zestimateChart">Zestimate Chart</string>
+	<string name="facebook_app_id">replace with facebook id</string>
+</resources>

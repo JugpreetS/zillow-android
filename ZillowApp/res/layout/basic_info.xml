@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+     
+   <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+        
+        
+     <TableLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentTop="true" >
+
+		<TableRow
+	         android:id="@+id/tableRow1"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:background="@color/white" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+	      <TextView
+	          android:id="@+id/seeMore"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/seeMore"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+
+	      <ImageView
+	          android:id="@+id/fb_share"
+	          android:layout_width="wrap_content"
+	          android:layout_height="40dp"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:contentDescription="@string/fb_share_desc"
+	          android:minHeight="40dp"
+	          android:scaleType="fitXY"
+	          android:src="@drawable/fb_share" />
+
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow2"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:background="@color/white"
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp">
+        
+	         <TextView
+	          android:id="@+id/propertyLink"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="36"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow3"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content" 
+			 android:background="@color/lightBlue"
+			 android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	    	>
+        <TextView
+	          android:id="@+id/propertyType"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/propertyType"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/propertyTypeVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+	         
+	     </TableRow>
+
+	     <TableRow
+	         android:id="@+id/tableRow4"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/white"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+        <TextView
+	          android:id="@+id/yearBuilt"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/yearBuilt"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/yearBuiltVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+	         
+	     </TableRow>
+
+	     <TableRow
+	         android:id="@+id/tableRow5"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/lightBlue"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+        <TextView
+	          android:id="@+id/lotSizeSqFt"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/lotSizeSqFt"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/lotSizeSqFtVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+	         
+	     </TableRow>
+
+	     <TableRow
+	         android:id="@+id/tableRow6"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/white"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+        <TextView
+	          android:id="@+id/finishedSqFt"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/finishedSqFt"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/finishedSqFtVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>	     
+	     <TableRow
+	         android:id="@+id/tableRow7"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/lightBlue"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+
+	         <TextView
+	             android:id="@+id/bathrooms"
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="5dp"
+	             android:layout_weight="1"
+	             android:gravity="left"
+	             android:maxEms="12"
+	             android:text="@string/bathrooms"
+	             android:textColor="@color/black"
+	             android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/bathroomsVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material"  />
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow8"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/white"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+        <TextView
+	          android:id="@+id/bedrooms"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/bedrooms"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/bedroomsVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow9"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/lightBlue"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+        <TextView
+	          android:id="@+id/taxAssessmentYear"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/taxAssessmentYear"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/taxAssessmentYearVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow10"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/white"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+        <TextView
+	          android:id="@+id/taxAssessment"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/taxAssessment"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/taxAssessmentVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow11"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/lightBlue"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+        <TextView
+	          android:id="@+id/lastSoldPrice"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/lastSoldPrice"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/lastSoldPriceVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow12"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/white"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+        <TextView
+	          android:id="@+id/lastSoldDate"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="left"
+	          android:layout_marginLeft="5dp"
+	          android:maxEms="12"
+	          android:text="@string/lastSoldDate"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/lastSoldDateVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow13"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/lightBlue"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+
+        <TextView
+            android:id="@+id/estimateAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:maxEms="12"
+            android:text="@string/estimateAmount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/estimateAmountVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+
+	     <TableRow
+	         android:id="@+id/tableRow14"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginBottom="1dp"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:background="@color/white"
+	         android:paddingBottom="5dp"
+	         android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/estimateValueChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:maxEms="8"
+            android:maxWidth="10dp"
+            android:text="@string/estimateValueChange"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+ 		<!-- <ImageView
+ 		    android:id="@+id/estimateValueChangeSign"
+ 		    android:layout_width="10dp"
+ 		    android:layout_height="10dp"
+ 		    android:layout_gravity="left"
+ 		    android:layout_weight="0.5"
+ 		    android:contentDescription="@string/changeArrow"
+ 		    android:maxHeight="8dp"
+ 		    android:maxWidth="10dp"
+ 		    android:scaleType="fitXY"
+ 		    android:src="@drawable/down" /> -->
+
+        <!-- <TextView
+            android:id="@+id/estimateValueChangeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|right"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="25dp"
+            android:text="@string/temp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_caption_material" /> -->
+        <TextView
+	          android:id="@+id/estimateValueChangeVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:drawableStart="@drawable/down"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow15"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/lightBlue"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+
+        <TextView
+            android:id="@+id/allTimePropertyRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:maxEms="12"
+            android:text="@string/allTimePropertyRange"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/allTimePropertyRangeVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow16"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/white"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+
+        <TextView
+            android:id="@+id/restimateAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:maxEms="12"
+            android:text="@string/restimateAmount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/restimateAmountVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow17"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/lightBlue"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+
+        <TextView
+            android:id="@+id/restimateValueChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:maxEms="12"
+            android:text="@string/restimateValueChange"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+        <!-- <ImageView
+            android:id="@+id/restimateValueChangeSign"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/changeArrow"
+            android:maxHeight="8dp"
+            android:maxWidth="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/down" /> -->
+
+        <TextView
+	          android:id="@+id/restimateValueChangeVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:drawableStart="@drawable/down"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	    
+	     </TableRow>
+	     <TableRow
+	         android:id="@+id/tableRow18"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:paddingTop="5dp" 
+	         android:paddingBottom="5dp"
+	         android:background="@color/white"
+	         android:layout_marginLeft="1dp"
+	         android:layout_marginRight="1dp"
+	         android:layout_marginBottom="1dp"
+	         >
+
+        <TextView
+            android:id="@+id/allTimeRentRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:maxEms="12"
+            android:text="@string/allTimeRentChange"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+		    
+        <TextView
+	          android:id="@+id/allTimeRentChangeVal"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:layout_weight="1"
+	          android:text="@string/temp"
+	          android:textColor="@color/black"
+	          android:textSize="@dimen/abc_text_size_caption_material" />	         
+	     </TableRow>
+	 </TableLayout>
+	 
+    </ScrollView>
+
+     
+<!-- <RelativeLayout
+    	android:id="@+id/footer"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="vertical"
+	    android:background="@color/white"
+	    android:layout_alignParentBottom="true"
+	    >
+    <TextView
+	     android:id="@+id/zestimate1"
+	     android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+	     android:layout_centerHorizontal="true"
+         android:layout_above="@+id/zestimate2"
+	     android:text="@string/zestimate_message_1"
+	     android:textColor="@color/black"
+	     android:textSize="@dimen/abc_text_size_caption_material" />
+	 <TextView
+	     android:id="@+id/zestimate2"
+	     android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+	     android:layout_centerHorizontal="true"
+	     android:text="@string/zestimate_message_2"
+         android:layout_above="@+id/zestimate3"	
+         android:linksClickable="true"
+	     android:textColor="@color/black"
+	     android:textSize="@dimen/abc_text_size_caption_material" />
+
+	 <TextView
+	     android:id="@+id/zestimate3"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:linksClickable="true"
+	     android:text="@string/zestimate_message_3"
+	     android:layout_alignParentBottom="true"
+	     android:layout_centerHorizontal="true"
+	     android:textColor="@color/black"
+	     android:textSize="@dimen/abc_text_size_caption_material" />
+</RelativeLayout> -->
+	 </RelativeLayout>

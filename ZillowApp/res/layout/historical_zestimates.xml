@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+     >
+     
+    
+     
+ <!-- <RelativeLayout
+    	android:id="@+id/footer"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="vertical"
+	    android:background="@color/white"
+	    android:layout_alignParentBottom="true"
+	    >
+    <TextView
+	     android:id="@+id/zestimate1"
+	     android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+	     android:layout_centerHorizontal="true"
+         android:layout_above="@+id/zestimate2"
+	     android:text="@string/zestimate_message_1"
+	     android:textColor="@color/black"
+	     android:textSize="@dimen/abc_text_size_caption_material" />
+	 <TextView
+	     android:id="@+id/zestimate2"
+	     android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+	     android:layout_centerHorizontal="true"
+	     android:text="@string/zestimate_message_2"
+         android:layout_above="@+id/zestimate3"	
+         android:linksClickable="true"
+	     android:textColor="@color/black"
+	     android:textSize="@dimen/abc_text_size_caption_material" />
+
+	 <TextView
+	     android:id="@+id/zestimate3"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:linksClickable="true"
+	     android:text="@string/zestimate_message_3"
+	     android:layout_alignParentBottom="true"
+	     android:layout_centerHorizontal="true"
+	     android:textColor="@color/black"
+	     android:textSize="@dimen/abc_text_size_caption_material" />
+</RelativeLayout> -->
+
+<!--     <TextSwitcher
+        android:id="@+id/textSwitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/red" 
+        android:layout_centerHorizontal="true">
+
+ -->       
+        
+    <!-- </TextSwitcher> -->
+
+	 <TextView
+	     android:id="@+id/zestimateYearInfo"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_centerHorizontal="true"
+	     android:layout_marginTop="20dp"
+	     android:text="@string/zestimateYearOneInfoVal"
+	     android:textColor="@color/black"
+	     android:textSize="@dimen/abc_text_size_body_1_material"
+	     android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/zestimateHouseAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zestimateYearInfo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/addressSampleVal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/abc_text_size_caption_material" />
+<!-- 
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textSwitcher"
+        android:layout_below="@+id/textSwitcher"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="156dp" 
+        android:background="@color/lightBlue">
+    </ImageSwitcher> -->
+    
+    <ImageView
+        android:id="@+id/imageChart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sample" 
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/zestimateChart"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="100dp"
+        android:text="@string/btnNext" />
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/btnPrev" />
+
+    
+
+ </RelativeLayout>
